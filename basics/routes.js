@@ -10,7 +10,7 @@ const requestHandler = (req, res) => {
     res.write("<html>");
     res.write("<head><title>Welcome</title></head>");
     res.write(
-      '<body><a href="/users">Users</a><h1>Create a User</h1><form action="/create-user" method="POST"><input type="text" name="username"><button type="submit">Create</button></form></body>'
+      '<body><a href="/users">Users</a><h1>Create a new User</h1><form action="/create-user" method="POST"><input type="text" name="username"><button type="submit">Create</button></form></body>'
     );
     res.write("</html>");
     return res.end();
